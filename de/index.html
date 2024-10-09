@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pou Online spielen - Kostenloses virtuelles Haustier-Spiel direkt im Browser    </title>
+    <meta name="description" content="Spiele Pou online - das unterhaltsame und kostenlose virtuelle Haustier-Spiel! Versorge dein außerirdisches Haustier mit Futter, halte es sauber und spiele Mini-Spiele. Kein Download nötig – erlebe das Original-Pou-Erlebnis direkt in deinem Browser.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .iframe-container {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .game-frame {
+            border: 10px solid transparent;
+            border-image: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2) 1;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.1));
+        }
+    </style>
+            <link rel="alternate" hreflang="en" href="https://pou.lol/" />
+            <link rel="alternate" hreflang="es" href="https://pou.lol/es/" />
+            <link rel="alternate" hreflang="de" href="https://pou.lol/de/" />
+            <link rel="alternate" hreflang="zh-cn" href="https://pou.lol/zh-cn/" />
+            <link rel="alternate" hreflang="fr" href="https://pou.lol/fr/" />
+            <link rel="alternate" hreflang="it" href="https://pou.lol/it/" />
+            <link rel="alternate" hreflang="ja" href="https://pou.lol/ja/" />
+            <link rel="alternate" hreflang="pt-br" href="https://pou.lol/pt-br/" />
+            <link rel="alternate" hreflang="hi" href="https://pou.lol/hi/" />
+            <script type="application/ld+json">
+                {
+                  "@context": "http://schema.org",
+                  "@type": "WebSite",
+                  "name": "Pou Online",
+                  "url": "https://pou.lol/de/",
+                  "inLanguage": "de"
+                }
+                </script>
+</head>
+<body class="bg-blue-50">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                <img src="/logo.jpg" alt="Pou Logo" class="w-10 h-10 sm:w-12 sm:h-12">
+                <h1 class="text-2xl sm:text-3xl font-bold text-blue-500">Pou Online</h1>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                <div class="flex space-x-4 mb-2 sm:mb-0">
+                    <a href="index.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">Startseite</a>
+                    <a href="/blogs" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">Blog</a>
+                    <a href="/terms-of-service.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">AGB</a>
+                    <a href="/privacy-policy.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">Datenschutz</a>
+                </div>
+                <select class="bg-white border border-gray-300 rounded px-2 py-1 text-sm sm:text-base">
+                    <option value="en">Englisch</option>
+                    <option value="es">Spanisch</option>
+                    <option value="pt-br">Portugiesisch (Brasilien)</option>
+                    <option value="fr">Französisch</option>
+                    <option value="it">Italienisch</option>
+                    <option value="hi">Hindi</option>
+                    <option value="zh-cn">Chinesisch (vereinfacht)</option>
+                    <option value="ja">Japanisch</option>
+                    <option value="de" selected>Deutsch</option>
+                </select>
+                <nav style="display: none;">
+                    <a href="/" hreflang="en">Englisch</a>
+                    <a href="/es/" hreflang="es">Spanisch</a>
+                    <a href="/pt-br/" hreflang="pt-br">Portugiesisch (Brasilien)</a>
+                    <a href="/fr/" hreflang="fr">Französisch</a>
+                    <a href="/it/" hreflang="it">Italienisch</a>
+                    <a href="/hi/" hreflang="hi">Hindi</a>
+                    <a href="/zh-cn/" hreflang="zh-cn">Chinesisch (vereinfacht)</a>
+                    <a href="/ja/" hreflang="ja">Japanisch</a>
+                
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-4 py-4 sm:py-8">
+        <div class="iframe-container p-2 sm:p-4 shadow-lg">
+            <iframe src="https://html5.gamedistribution.com/d1362abc246f43bdb5c26643aec2b61b/" class="game-frame w-full h-[60vh] sm:h-[80vh] rounded-lg"></iframe>
+        </div>
+        <div class="mt-4 flex justify-between items-center bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200 p-3 rounded-lg shadow-md">
+            <button onclick="resetGame()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                Spiel neu starten
+            </button>
+            <button onclick="toggleFullscreen()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                Vollbild
+            </button>
+        </div>
+    
+        <div class="mt-8 space-y-8">
+            <div class="bg-white rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-blue-500 mb-4">Spiele Pou Online – Dein Lieblings-Virtuelles-Haustier-Spiel in deinem Browser</h2>
+                <p class="text-gray-700">Wenn du virtuelle Haustier-Spiele liebst, ist Pou das perfekte Online-Spiel für dich. In dieser Browser-Version kannst du die Freude erleben, dich um deinen eigenen Pou zu kümmern, ohne eine App herunterladen zu müssen. Dieses Online-Pou-Spiel lässt dich dein niedliches außerirdisches Haustier füttern, baden und mit ihm spielen, alles bequem von deinem Webbrowser aus. Lass uns alles erkunden, was du über Pou wissen musst, einschließlich seiner Geschichte, Spielstrategien und Tipps, um sicherzustellen, dass dein Pou glücklich und gesund bleibt.</p>
+                <img src="/1.jpg" alt="Pou Online Spiel" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-yellow-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-yellow-600 mb-4">Was ist Pou?</h2>
+                <p class="text-gray-700">Pou ist ein einzigartiges virtuelles Haustier-Spiel, bei dem Spieler sich um eine niedliche, blob-artige außerirdische Kreatur kümmern. Ursprünglich als Handyspiel veröffentlicht, ist Pou aufgrund seines einfachen, aber fesselnden Gameplays zu einem Favoriten für Spieler weltweit geworden. In diesem Spiel können Spieler mit ihrem Pou interagieren, indem sie ihn füttern, reinigen, ankleiden und Mini-Spiele mit ihm spielen. Je mehr du dich um deinen Pou kümmerst, desto mehr anpassbare Optionen und Funktionen schaltest du frei.</p>
+                <img src="/2.webp" alt="Pou Charakter" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-green-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-green-600 mb-4">Die Geschichte von Pou</h2>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">Ursprünge von Pou</h3>
+                <p class="text-gray-700 mb-4">Das Spiel wurde 2012 von Paul Salameh, einem libanesischen Entwickler, veröffentlicht, der ein Spiel ähnlich dem klassischen Tamagotchi erschaffen wollte. Das Spiel gewann schnell an Popularität aufgrund seiner Zugänglichkeit und dem Reiz, sich um ein virtuelles Haustier zu kümmern. Im Laufe der Jahre wurde Pou zu einem bekannten Namen unter Handyspielern und bot stundenlangen Spaß mit einfachen Spielmechaniken.</p>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">Pous Aufstieg zur Popularität</h3>
+                <p class="text-gray-700 mb-4">Seit seiner Veröffentlichung wurde dieses Spiel millionenfach auf Android- und iOS-Geräten heruntergeladen. Der süchtig machende Charme des Spiels liegt in seiner breiten Palette von Aktivitäten, einschließlich der Fütterung deines Pou, dem Spielen von Spielen, um ihn zu unterhalten, und der Anpassung seines Aussehens. Die Browser-Version von Pou bringt das gleiche fesselnde Erlebnis einem ganz neuen Publikum, sodass noch mehr Spieler dieses entzückende Spiel ohne Installation genießen können.</p>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">Die Entwicklung von Pou</h3>
+                <p class="text-gray-700">Im Laufe der Zeit hat sich dieses Spiel von einem einfachen virtuellen Haustier-Spiel zu einer reichen und vielfältigen Erfahrung entwickelt, gefüllt mit Mini-Spielen und Anpassungsoptionen. Die Einführung einer Online-Version stellt sicher, dass Spieler jetzt einfach über ihre Webbrowser auf das Spiel zugreifen können, sodass sie sich jederzeit und überall um ihren Pou kümmern können. Während Pou sich weiterentwickelt, wächst seine Community engagierter Fans weiter, was es zu einem der langlebigsten virtuellen Haustier-Spiele macht.</p>
+                <img src="/3.jpg" alt="Pou Geschichte Zeitstrahl" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-pink-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-pink-600 mb-4">Wie man Pou spielt</h2>
+                <h3 class="text-2xl font-bold text-pink-500 mb-2">Erste Schritte</h3>
+                <p class="text-gray-700 mb-4">Um dieses Spiel zu spielen, öffne einfach das Spiel in deinem Webbrowser. Sobald das Spiel geladen ist, wirst du deinem eigenen Pou vorgestellt. Dein Ziel ist es, dich um dieses außerirdische Haustier zu kümmern, indem du seine Bedürfnisse erfüllst, einschließlich es zu füttern, zu reinigen und sicherzustellen, dass es genug Ruhe bekommt.</p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>Pou füttern:</strong> Halte dein Haustier satt und glücklich, indem du es mit verschiedenen Arten von Nahrung fütterst. Du kannst Lebensmittel im Spiel-Shop mit Münzen kaufen, die du durch das Spielen von Mini-Spielen verdienst.</li>
+                    <li><strong>Pou reinigen:</strong> Dein Haustier wird mit der Zeit schmutzig, und es ist deine Aufgabe, es sauber zu halten. Benutze Seife und Wasser, um deinen Pou zu waschen und stelle sicher, dass er frisch und gesund bleibt.</li>
+                    <li><strong>Mit Pou spielen:</strong> Dein Haustier liebt es zu spielen! Beteilige dich an verschiedenen Mini-Spielen, die nicht nur deinen Pou unterhalten, sondern dir auch helfen, Münzen zu verdienen, um Essen und Zubehör zu kaufen.</li>
+                </ul>
+                <h3 class="text-2xl font-bold text-pink-500 mb-2">Fortgeschrittene Strategien für die Pou-Pflege</h3>
+                <p class="text-gray-700">Sobald du die Grundlagen gemeistert hast, hier einige fortgeschrittene Tipps, um sicherzustellen, dass dein Pou gedeiht:</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><strong>Energiemanagement:</strong> Dein Haustier wird nach dem Spielen müde. Stelle sicher, dass du deinen Pou schlafen legst, um Energie zurückzugewinnen. Lass ihn nicht zu müde werden, da dies seine Stimmung beeinträchtigt.</li>
+                    <li><strong>Mini-Spiele:</strong> Die Mini-Spiele in Pou sind nicht nur zum Spaß da; sie sind eine großartige Möglichkeit, zusätzliche Münzen zu verdienen. Je mehr Münzen du sammelst, desto mehr kannst du für deinen Pou kaufen, einschließlich Kostüme, Essen und Raumdekorationen.</li>
+                    <li><strong>Anpassung:</strong> Im Laufe des Spiels kannst du eine breite Palette von Anpassungsoptionen freischalten. Ändere das Aussehen deines Pou, seine Outfits und sogar die Tapete seines Zuhauses. Diese Funktionen machen Pou persönlicher und unterhaltsamer.</li>
+                </ul>
+                <img src="/4.webp" alt="Pou Gameplay" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-purple-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-purple-600 mb-4">Tipps zum Münzen verdienen in Pou</h2>
+                <p class="text-gray-700 mb-4">Münzen sind die Währung des Pou-Universums, und du wirst sie brauchen, um Essen, Tränke und Dekorationen zu kaufen. Hier sind einige der besten Möglichkeiten, Münzen im Online-Pou-Spiel zu verdienen:</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><strong>Spiele Mini-Spiele:</strong> Mini-Spiele sind der schnellste Weg, um Münzen zu verdienen. Beliebte Spiele sind die Pou-Fußball-Herausforderung und das Flugspiel, bei dem du deinen Pou durch Hindernisse führst.</li>
+                    <li><strong>Tägliche Belohnungen:</strong> Melde dich täglich an, um kostenlose Belohnungen und Münzen zu sammeln, die dir helfen können, dein Haustier glücklich und gut gefüttert zu halten.</li>
+                    <li><strong>Erfülle Erfolge:</strong> Das Spiel bietet verschiedene Erfolge für die Pflege deines Pou. Das Abschließen dieser Aufgaben wird dich mit zusätzlichen Münzen belohnen.</li>
+                </ul>
+                <img src="/5.jpg" alt="Pou Münzen" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-blue-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">Warum Pou online spielen?</h2>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">Zugänglichkeit</h3>
+                <p class="text-gray-700 mb-4">Das Spielen dieses Spiels online eliminiert die Notwendigkeit von Downloads oder Updates. Du kannst einfach deinen Browser öffnen und sofort anfangen zu spielen. Dies macht es für neue Spieler einfacher, das Spiel auszuprobieren, ohne sich auf eine App festlegen zu müssen.</p>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">Ein klassisches Spiel mit neuen Funktionen</h3>
+                <p class="text-gray-700 mb-4">Die Browser-Version von Pou behält den ganzen Spaß des ursprünglichen Handyspiels bei, aber mit verbesserter Zugänglichkeit. Das Gameplay ist unkompliziert, was es sowohl für neue als auch für wiederkehrende Spieler angenehm macht. Ob du dich entspannen möchtest, indem du dich um deinen Pou kümmerst, oder die Herausforderungen der Mini-Spiele annehmen möchtest, die Online-Version von Pou hat alles zu bieten.</p>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">Kostenlos spielbar</h3>
+                <p class="text-gray-700">Eines der besten Merkmale dieses Online-Spiels ist, dass es völlig kostenlos spielbar ist. Du kannst die Freude am Aufziehen eines Pou ohne jegliche Kosten erleben, was es zu einer idealen Wahl für diejenigen macht, die nach einem unterhaltsamen und kostengünstigen Spiel suchen.</p>
+            </div>
+    
+            <div class="bg-red-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-red-600 mb-4">Fazit</h2>
+                <p class="text-gray-700">Zusammenfassend bleibt dieses Spiel ein beliebtes virtuelles Haustier-Spiel und ist jetzt online für jeden verfügbar. Ob du neu in der Welt von Pou bist oder ein langjähriger Fan, diese Online-Version bringt den Charme und die Aufregung von Pou in deinen Webbrowser. Kümmere dich um deinen Pou, spiele Mini-Spiele und erkunde die vielen Anpassungsoptionen, während du dein perfektes Haustier erschaffst. Beginne noch heute, Pou online zu spielen, und entdecke, warum Millionen von Spielern auf der ganzen Welt dieses niedliche und unterhaltsame Spiel lieben!</p>
+                <img src="/6.jpg" alt="Pou Spiel Zusammenfassung" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+        </div>
+</div>
+</div>
+</main>
+
+<footer class="bg-white mt-4 sm:mt-8 py-3 sm:py-4">
+<div class="container mx-auto px-4 text-center text-sm sm:text-base text-gray-600">
+    &copy; 2023 Pou Online. Alle Rechte vorbehalten.
+</div>
+</footer>
+</body>
+<script src="/script.js"></script>
+</html>

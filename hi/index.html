@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पौ ऑनलाइन खेलें - अपने ब्राउज़र में मुफ्त आभासी पालतू जानवर का खेल    </title>
+    <meta name="description" content="पौ ऑनलाइन खेलें, मज़ेदार और मुफ्त आभासी पालतू जानवर का खेल! अपने परग्रही पालतू जानवर की देखभाल करें, उसे खिलाएं, साफ करें और लघु खेल खेलें। डाउनलोड की ज़रूरत नहीं - अपने वेब ब्राउज़र में असली पौ अनुभव का मज़ा लें।">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .iframe-container {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .game-frame {
+            border: 10px solid transparent;
+            border-image: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2) 1;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.1));
+        }
+    </style>
+        <link rel="alternate" hreflang="en" href="https://pou.lol/" />
+        <link rel="alternate" hreflang="es" href="https://pou.lol/es/" />
+        <link rel="alternate" hreflang="de" href="https://pou.lol/de/" />
+        <link rel="alternate" hreflang="zh-cn" href="https://pou.lol/zh-cn/" />
+        <link rel="alternate" hreflang="fr" href="https://pou.lol/fr/" />
+        <link rel="alternate" hreflang="it" href="https://pou.lol/it/" />
+        <link rel="alternate" hreflang="ja" href="https://pou.lol/ja/" />
+        <link rel="alternate" hreflang="pt-br" href="https://pou.lol/pt-br/" />
+        <link rel="alternate" hreflang="hi" href="https://pou.lol/hi/" />
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "WebSite",
+              "name": "Pou Online",
+              "url": "https://pou.lol/hi/",
+              "inLanguage": "hi"
+            }
+            </script>
+</head>
+<body class="bg-blue-50">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                <img src="/logo.jpg" alt="पौ लोगो" class="w-10 h-10 sm:w-12 sm:h-12">
+                <h1 class="text-2xl sm:text-3xl font-bold text-blue-500">पौ ऑनलाइन</h1>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                <div class="flex space-x-4 mb-2 sm:mb-0">
+                    <a href="index.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">होम</a>
+                    <a href="/blogs" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">ब्लॉग</a>
+                    <a href="/terms-of-service.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">नियम और शर्तें</a>
+                    <a href="/privacy-policy.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">गोपनीयता नीति</a>
+                </div>
+                <select class="bg-white border border-gray-300 rounded px-2 py-1 text-sm sm:text-base">
+                    <option value="en">अंग्रेज़ी</option>
+                    <option value="es">स्पेनिश</option>
+                    <option value="pt-br">पुर्तगाली (ब्राज़ील)</option>
+                    <option value="fr">फ्रेंच</option>
+                    <option value="it">इतालवी</option>
+                    <option value="hi" selected>हिन्दी</option>
+                    <option value="zh-cn">सरलीकृत चीनी</option>
+                    <option value="ja">जापानी</option>
+                    <option value="de">जर्मन</option>
+                </select>
+                <nav style="display: none;">
+                    <a href="/" hreflang="en">English</a>
+                    <a href="/es/" hreflang="es">Spanish</a>
+                    <a href="/pt-br/" hreflang="pt-br">Portuguese (Brazil)</a>
+                    <a href="/fr/" hreflang="fr">French</a>
+                    <a href="/it/" hreflang="it">Italian</a>
+                    <a href="/hi/" hreflang="hi">Hindi</a>
+                    <a href="/zh-cn/" hreflang="zh-cn">Simplified Chinese</a>
+                    <a href="/ja/" hreflang="ja">Japanese</a>
+                    <a href="/de/" hreflang="de">German</a>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-4 sm:py-8">
+        <div class="iframe-container p-2 sm:p-4 shadow-lg">
+            <iframe src="https://html5.gamedistribution.com/d1362abc246f43bdb5c26643aec2b61b/" class="game-frame w-full h-[60vh] sm:h-[80vh] rounded-lg"></iframe>
+        </div>
+        <div class="mt-4 flex justify-between items-center bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200 p-3 rounded-lg shadow-md">
+            <button onclick="resetGame()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                खेल रीसेट करें
+            </button>
+            <button onclick="toggleFullscreen()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                पूर्ण स्क्रीन
+            </button>
+        </div>
+    
+        <div class="mt-8 space-y-8">
+            <div class="bg-white rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-blue-500 mb-4">पौ ऑनलाइन खेलें – अपने ब्राउज़र में आपका पसंदीदा आभासी पालतू जानवर का खेल</h2>
+                <p class="text-gray-700">यदि आप आभासी पालतू जानवरों के खेल पसंद करते हैं, तो पौ आपके लिए एकदम सही ऑनलाइन खेल है। इस ब्राउज़र संस्करण में, आप बिना किसी ऐप को डाउनलोड किए अपने खुद के पौ की देखभाल करने का आनंद ले सकते हैं। यह ऑनलाइन पौ खेल आपको अपने प्यारे एलियन पालतू जानवर को खिलाने, नहलाने और उसके साथ खेलने की अनुमति देगा, वह भी आपके वेब ब्राउज़र की सुविधा से। आइए पौ के बारे में सब कुछ जानें, जिसमें इसका इतिहास, खेल रणनीतियाँ, और आपके पौ को खुश और स्वस्थ रखने के टिप्स शामिल हैं।</p>
+                <img src="/1.jpg" alt="पौ ऑनलाइन खेल" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-yellow-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-yellow-600 mb-4">पौ क्या है?</h2>
+                <p class="text-gray-700">यह एक अनोखा आभासी पालतू जानवर का खेल है जहाँ खिलाड़ी एक प्यारे, बूँद जैसे एलियन प्राणी की देखभाल करते हैं। मूल रूप से एक मोबाइल गेम के रूप में जारी किया गया, पौ अपने सरल लेकिन आकर्षक गेमप्ले के कारण दुनिया भर के खिलाड़ियों का पसंदीदा बन गया है। इस खेल में, खिलाड़ी अपने पौ के साथ खिलाकर, साफ करके, कपड़े पहनाकर और मिनी-गेम खेलकर बातचीत कर सकते हैं। जितना अधिक आप अपने पौ की देखभाल करते हैं, उतने ही अधिक अनुकूलन विकल्प और सुविधाएँ आप अनलॉक करते हैं।</p>
+                <img src="/2.webp" alt="पौ चरित्र" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-green-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-green-600 mb-4">पौ का इतिहास</h2>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">पौ की उत्पत्ति</h3>
+                <p class="text-gray-700 mb-4">यह खेल पहली बार 2012 में पॉल सलामेह द्वारा जारी किया गया था, जो एक लेबनानी डेवलपर थे जिन्होंने क्लासिक तमागोची जैसा एक खेल बनाने का लक्ष्य रखा था। खेल ने अपनी सुलभ प्रकृति और एक आभासी पालतू जानवर की देखभाल करने के आकर्षण के कारण जल्दी ही लोकप्रियता हासिल कर ली। वर्षों के दौरान, पौ मोबाइल गेमर्स के बीच एक घरेलू नाम बन गया, जो सरल गेमप्ले मैकेनिक्स के साथ घंटों मनोरंजन प्रदान करता है।</p>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">पौ का लोकप्रियता की ओर उदय</h3>
+                <p class="text-gray-700 mb-4">अपनी रिलीज के बाद से, इस खेल को एंड्रॉइड और आईओएस उपकरणों पर लाखों बार डाउनलोड किया गया है। खेल का नशीला आकर्षण इसकी विस्तृत गतिविधियों में निहित है, जिसमें अपने पौ को खिलाना, उसे मनोरंजित रखने के लिए खेल खेलना, और उसकी उपस्थिति को अनुकूलित करना शामिल है। पौ का ब्राउज़र संस्करण एक पूरी नई दर्शकों के लिए वही आकर्षक अनुभव लाता है, जो और अधिक खिलाड़ियों को बिना किसी इंस्टॉलेशन की आवश्यकता के इस आनंददायक खेल का आनंद लेने की अनुमति देता है।</p>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">पौ का विकास</h3>
+                <p class="text-gray-700">समय के साथ, यह खेल एक बुनियादी आभासी पालतू जानवर के खेल से विकसित होकर एक समृद्ध और विविध अनुभव बन गया है, जो मिनी-गेम और अनुकूलन विकल्पों से भरा हुआ है। एक ऑनलाइन संस्करण की शुरुआत यह सुनिश्चित करती है कि खिलाड़ी अब अपने वेब ब्राउज़र के माध्यम से आसानी से खेल तक पहुंच सकते हैं, जो उन्हें कभी भी और कहीं भी अपने पौ की देखभाल करने की अनुमति देता है। जैसे-जैसे पौ विकसित होता रहता है, इसके समर्पित प्रशंसकों का समुदाय बढ़ता जा रहा है, जो इसे सबसे स्थायी आभासी पालतू जानवर के खेलों में से एक बनाता है।</p>
+                <img src="/3.jpg" alt="पौ इतिहास की समयरेखा" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-pink-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-pink-600 mb-4">पौ कैसे खेलें</h2>
+                <h3 class="text-2xl font-bold text-pink-500 mb-2">शुरुआत करना</h3>
+                <p class="text-gray-700 mb-4">इस खेल को खेलने के लिए, बस अपने वेब ब्राउज़र में खेल खोलें। एक बार खेल लोड हो जाने के बाद, आपको अपने खुद के पौ से मिलवाया जाएगा। आपका लक्ष्य इस एलियन पालतू जानवर की देखभाल करना है, जिसमें उसे खिलाना, साफ करना और यह सुनिश्चित करना शामिल है कि उसे पर्याप्त आराम मिले।</p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>पौ को खिलाना:</strong> अपने पालतू जानवर को विभिन्न प्रकार के खाद्य पदार्थों से खिलाकर उसे भरा हुआ और खुश रखें। आप मिनी-गेम खेलकर कमाए गए सिक्कों का उपयोग करके इन-गेम शॉप से खाद्य पदार्थ खरीद सकते हैं।</li>
+                    <li><strong>पौ को साफ करना:</strong> समय के साथ आपका पालतू जानवर गंदा हो जाएगा, और उसे साफ रखना आपका काम है। अपने पौ को धोने और यह सुनिश्चित करने के लिए साबुन और पानी का उपयोग करें कि वह ताजा और स्वस्थ रहे।</li>
+                    <li><strong>पौ के साथ खेलना:</strong> आपका पालतू जानवर खेलना पसंद करता है! विभिन्न मिनी-गेम में भाग लें जो न केवल आपके पौ का मनोरंजन करते हैं बल्कि आपको खाना और सामान खरीदने के लिए सिक्के कमाने में भी मदद करते हैं।</li>
+                </ul>
+                <h3 class="text-2xl font-bold text-pink-500 mb-2">पौ की देखभाल के लिए उन्नत रणनीतियाँ</h3>
+                <p class="text-gray-700">एक बार जब आप बुनियादी बातें सीख लेते हैं, तो यहाँ कुछ उन्नत सुझाव दिए गए हैं जो सुनिश्चित करेंव दिए गए हैं जो सुनिश्चित करें कि आपका पौ फले-फूले:</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><strong>ऊर्जा प्रबंधन:</strong> आपका पालतू जानवर खेलने के बाद थक जाता है। अपने पौ को ऊर्जा पुनः प्राप्त करने के लिए सोने दें। उसे बहुत अधिक थका न होने दें, क्योंकि यह उसके मूड को प्रभावित करेगा।</li>
+                    <li><strong>मिनी-गेम:</strong> पौ में मिनी-गेम केवल मनोरंजन के लिए नहीं हैं; वे अतिरिक्त सिक्के कमाने का एक शानदार तरीका हैं। जितने अधिक सिक्के आप इकट्ठा करते हैं, उतना ही अधिक आप अपने पौ के लिए खरीद सकते हैं, जिसमें पोशाक, भोजन और उसके कमरे के लिए सजावट शामिल है।</li>
+                    <li><strong>अनुकूलन:</strong> जैसे-जैसे आप आगे बढ़ते हैं, आप अनुकूलन विकल्पों की एक विस्तृत श्रृंखला को अनलॉक कर सकते हैं। अपने पौ की उपस्थिति, उसके परिधान और यहां तक कि उसके घर की पृष्ठभूमि को बदलें। ये विशेषताएं पौ को अधिक व्यक्तिगत और मनोरंजक बनाती हैं।</li>
+                </ul>
+                <img src="/4.webp" alt="पौ गेमप्ले" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-purple-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-purple-600 mb-4">पौ में सिक्के कमाने के टिप्स</h2>
+                <p class="text-gray-700 mb-4">सिक्के पौ ब्रह्मांड की मुद्रा हैं, और आपको भोजन, पोशन और सजावट खरीदने के लिए इनकी आवश्यकता होगी। यहां पौ ऑनलाइन गेम में सिक्के कमाने के कुछ सर्वोत्तम तरीके दिए गए हैं:</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><strong>मिनी-गेम खेलें:</strong> मिनी-गेम सिक्के कमाने का सबसे तेज़ तरीका हैं। लोकप्रिय खेलों में पौ फुटबॉल चैलेंज और उड़ान खेल शामिल हैं, जहां आप अपने पौ को बाधाओं के माध्यम से निर्देशित करते हैं।</li>
+                    <li><strong>दैनिक पुरस्कार:</strong> मुफ्त पुरस्कार और सिक्के एकत्र करने के लिए दैनिक रूप से लॉग इन करना सुनिश्चित करें जो आपके पालतू जानवर को खुश और अच्छी तरह से खिलाया रखने में मदद कर सकते हैं।</li>
+                    <li><strong>उपलब्धियां पूरी करें:</strong> खेल आपके पौ की देखभाल करने के लिए विभिन्न उपलब्धियां प्रदान करता है। इन कार्यों को पूरा करने पर आपको अतिरिक्त सिक्कों से पुरस्कृत किया जाएगा।</li>
+                </ul>
+                <img src="/5.jpg" alt="पौ के सिक्के" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-blue-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">पौ ऑनलाइन क्यों खेलें?</h2>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">पहुंच</h3>
+                <p class="text-gray-700 mb-4">पौ को ऑनलाइन खेलने से डाउनलोड या अपडेट की आवश्यकता समाप्त हो जाती है। आप बस अपना ब्राउज़र खोल सकते हैं और तुरंत खेलना शुरू कर सकते हैं। यह नए खिलाड़ियों के लिए किसी ऐप के लिए प्रतिबद्ध हुए बिना खेल को आज़माना आसान बनाता है।</p>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">नई सुविधाओं के साथ एक क्लासिक खेल</h3>
+                <p class="text-gray-700 mb-4">पौ का ब्राउज़र संस्करण मूल मोबाइल गेम के सभी मज़े को बरकरार रखता है, लेकिन बेहतर पहुंच के साथ। गेमप्ले सरल है, जो इसे नए और वापस आने वाले खिलाड़ियों दोनों के लिए आनंददायक बनाता है। चाहे आप अपने पौ की देखभाल करके आराम करना चाहते हों या मिनी-गेम की चुनौतियों का सामना करना चाहते हों, पौ का ऑनलाइन संस्करण सब कुछ प्रदान करता है।</p>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">खेलने के लिए मुफ्त</h3>
+                <p class="text-gray-700">इस ऑनलाइन खेल की सबसे अच्छी विशेषताओं में से एक यह है कि यह पूरी तरह से मुफ्त है। आप बिना किसी लागत के एक पौ को पालने का आनंद अनुभव कर सकते हैं, जो इसे उन लोगों के लिए एक आदर्श विकल्प बनाता है जो एक मज़ेदार और किफायती खेल की तलाश में हैं।</p>
+            </div>
+    
+            <div class="bg-red-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-red-600 mb-4">निष्कर्ष</h2>
+                <p class="text-gray-700">निष्कर्ष में, पौ एक बहुत प्रिय आभासी पालतू जानवर का खेल बना हुआ है, और अब यह सभी के आनंद के लिए ऑनलाइन उपलब्ध है। चाहे आप पौ की दुनिया में नए हों या लंबे समय से प्रशंसक हों, यह ऑनलाइन संस्करण पौ के आकर्षण और उत्साह को आपके वेब ब्राउज़र तक लाता है। अपने पौ की देखभाल करें, मिनी-गेम खेलें और अपने सही पालतू जानवर को बनाते हुए कई अनुकूलन विकल्पों का पता लगाएं। आज ही पौ ऑनलाइन खेलना शुरू करें और पता करें कि दुनिया भर के लाखों खिलाड़ी इस प्यारे और मनोरंजक खेल को क्यों पसंद करते हैं!</p>
+                <img src="/6.jpg" alt="पौ खेल सारांश" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-4 sm:mt-8 py-3 sm:py-4">
+        <div class="container mx-auto px-4 text-center text-sm sm:text-base text-gray-600">
+            &copy; 2023 पौ ऑनलाइन। सर्वाधिकार सुरक्षित।
+        </div>
+    </footer>
+</body>
+<script src="/script.js"></script>
+</html>

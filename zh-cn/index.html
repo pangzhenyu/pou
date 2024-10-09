@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线玩Pou - 在浏览器中免费体验虚拟宠物游戏    </title>
+    <meta name="description" content="在线玩Pou,这款有趣且免费的虚拟宠物游戏!通过喂食、清洁和玩小游戏来照顾你的外星宠物。无需下载 - 在网页浏览器中享受原汁原味的Pou体验。">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .iframe-container {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .game-frame {
+            border: 10px solid transparent;
+            border-image: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2) 1;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.1));
+        }
+    </style>
+            <link rel="alternate" hreflang="en" href="https://pou.lol/" />
+            <link rel="alternate" hreflang="es" href="https://pou.lol/es/" />
+            <link rel="alternate" hreflang="de" href="https://pou.lol/de/" />
+            <link rel="alternate" hreflang="zh-cn" href="https://pou.lol/zh-cn/" />
+            <link rel="alternate" hreflang="fr" href="https://pou.lol/fr/" />
+            <link rel="alternate" hreflang="it" href="https://pou.lol/it/" />
+            <link rel="alternate" hreflang="ja" href="https://pou.lol/ja/" />
+            <link rel="alternate" hreflang="pt-br" href="https://pou.lol/pt-br/" />
+            <link rel="alternate" hreflang="hi" href="https://pou.lol/hi/" />
+                <script type="application/ld+json">
+                    {
+                      "@context": "http://schema.org",
+                      "@type": "WebSite",
+                      "name": "Pou Online",
+                      "url": "https://pou.lol/zh-cn/",
+                      "inLanguage": "zh-cn"
+                    }
+                    </script>
+</head>
+<body class="bg-blue-50">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                <img src="/logo.jpg" alt="Pou标志" class="w-10 h-10 sm:w-12 sm:h-12">
+                <h1 class="text-2xl sm:text-3xl font-bold text-blue-500">在线Pou</h1>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                <div class="flex space-x-4 mb-2 sm:mb-0">
+                    <a href="index.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">首页</a>
+                    <a href="/blogs" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">博客</a>
+                    <a href="/terms-of-service.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">条款</a>
+                    <a href="/privacy-policy.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">隐私</a>
+                </div>
+                <select class="bg-white border border-gray-300 rounded px-2 py-1 text-sm sm:text-base">
+                    <option value="en">英语</option>
+                    <option value="es">西班牙语</option>
+                    <option value="pt-br">葡萄牙语(巴西)</option>
+                    <option value="fr">法语</option>
+                    <option value="it">意大利语</option>
+                    <option value="hi">印地语</option>
+                    <option value="zh-cn" selected>简体中文</option>
+                    <option value="ja">日语</option>
+                    <option value="de">德语</option>
+                </select>
+                <nav style="display: none;">
+                    <a href="/" hreflang="en">英语</a>
+                    <a href="/es/" hreflang="es">西班牙语</a>
+                    <a href="/de/" hreflang="de">德语</a>
+                    <a href="/zh-cn/" hreflang="zh-cn">简体中文</a>
+                    <a href="/ja/" hreflang="ja">日语</a>
+                    <a href="/pt-br/" hreflang="pt-br">葡萄牙语(巴西)</a>
+                    <a href="/hi/" hreflang="hi">印地语</a>
+                    <a href="/fr/" hreflang="fr">法语</a>
+                    <a href="/it/" hreflang="it">意大利语</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-4 sm:py-8">
+        <div class="iframe-container p-2 sm:p-4 shadow-lg">
+            <iframe src="https://html5.gamedistribution.com/d1362abc246f43bdb5c26643aec2b61b/" class="game-frame w-full h-[60vh] sm:h-[80vh] rounded-lg"></iframe>
+        </div>
+        <div class="mt-4 flex justify-between items-center bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200 p-3 rounded-lg shadow-md">
+            <button onclick="resetGame()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                重置游戏
+            </button>
+            <button onclick="toggleFullscreen()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                全屏
+            </button>
+        </div>
+
+        <div class="mt-8 space-y-8">
+            <div class="bg-white rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-blue-500 mb-4">在线玩Pou – 在浏览器中体验你最喜爱的虚拟宠物游戏</h2>
+                <p class="text-gray-700">如果你喜欢虚拟宠物游戏，Pou绝对是你的理想选择。在这个浏览器版本中，你可以体验照顾自己的Pou的乐趣，无需下载任何应用。这款在线Pou游戏让你可以通过网页浏览器方便地喂养、洗澡和陪伴你可爱的外星宠物。让我们深入了解关于Pou的一切，包括它的历史、游戏策略，以及确保你的Pou保持快乐健康的小贴士。</p>
+                <img src="/1.jpg" alt="Pou在线游戏" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-yellow-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-yellow-600 mb-4">什么是Pou？</h2>
+                <p class="text-gray-700">这是一款独特的虚拟宠物游戏，玩家需要照顾一个可爱的、类似水滴形状的外星生物。Pou最初作为手机游戏发布，凭借其简单而引人入胜的游戏玩法，成为全球玩家的最爱。在这个游戏中，玩家可以通过喂食、清洁、装扮和玩小游戏来与他们的Pou互动。你越是照顾好你的Pou，就能解锁更多的自定义选项和功能。</p>
+                <img src="/2.webp" alt="Pou角色" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-green-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-green-600 mb-4">Pou的历史</h2>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">Pou的起源</h3>
+                <p class="text-gray-700 mb-4">这款游戏最初于2012年由黎巴嫩开发者Paul Salameh发布，他的目标是创造一个类似经典电子宠物的游戏。由于其易于上手的特性和照顾虚拟宠物的吸引力，游戏很快就获得了popularity。多年来，Pou成为手机游戏玩家中家喻户晓的名字，通过简单的游戏机制提供了数小时的乐趣。</p>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">Pou的人气崛起</h3>
+                <p class="text-gray-700 mb-4">自发布以来，这款游戏在Android和iOS设备上已被下载数百万次。游戏的上瘾魅力在于其广泛的活动，包括喂养你的Pou、玩游戏来娱乐它，以及定制它的外观。Pou的浏览器版本将同样引人入胜的体验带给了全新的受众，让更多玩家无需安装就能享受这款令人愉快的游戏。</p>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">Pou的演变</h3>
+                <p class="text-gray-700">随着时间的推移，这款游戏已经从一个基础的虚拟宠物游戏演变成一个丰富多样的体验，充满了小游戏和定制选项。在线版本的推出确保玩家现在可以通过网页浏览器轻松访问游戏，让他们随时随地都能照顾他们的Pou。随着Pou不断发展，它的忠实粉丝社区也在不断壮大，使其成为最持久的虚拟宠物游戏之一。</p>
+                <img src="/3.jpg" alt="Pou历史时间线" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-pink-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-pink-600 mb-4">如何玩Pou</h2>
+                <h3 class="text-2xl font-bold text-pink-500 mb-2">开始游戏</h3>
+                <p class="text-gray-700 mb-4">要玩这个游戏，只需在你的网页浏览器中打开游戏。一旦游戏加载完成，你就会见到你自己的Pou。你的目标是通过满足它的需求来照顾这个外星宠物，包括喂食、清洁，并确保它得到足够的休息。</p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>喂养Pou：</strong> 通过喂食不同类型的食物来保持你的宠物饱足和快乐。你可以使用玩小游戏赚取的金币在游戏内商店购买食物。</li>
+                    <li><strong>清洁Pou：</strong> 你的宠物会随着时间变脏，你的工作就是保持它的清洁。使用肥皂和水来洗你的Pou，确保它保持新鲜和健康。</li>
+                    <li><strong>和Pou玩耍：</strong> 你的宠物喜欢玩耍！参与各种小游戏不仅能让你的Pou保持娱乐，还能帮你赚取金币来购买食物和配件。</li>
+                </ul>
+                <h3 class="text-2xl font-bold text-pink-500 mb-2">Pou照顾的进阶策略</h3>
+                <p class="text-gray-700">一旦你掌握了基础，这里有一些进阶技巧来确保你的Pou茁壮成长：</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><strong>能量管理：</strong> 你的宠物在玩耍后会感到疲劳。确保让你的Pou睡觉以恢复能量。不要让它太累，因为这会影响它的心情。</li>
+                    <li><strong>小游戏：</strong> Pou中的小游戏不仅仅是为了好玩；它们是赚取额外金币的好方法。你收集的金币越多，就能为你的Pou购买更多东西，包括服装、食物和房间装饰。</li>
+                    <li><strong>个性化：</strong> 随着游戏进程，你可以解锁广泛的个性化选项。改变你的Pou的外观、服装，甚至是它家的壁纸。这些功能使Pou更加个性化和有趣。</li>
+                </ul>
+                <img src="/4.webp" alt="Pou游戏玩法" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-purple-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-purple-600 mb-4">在Pou中赚取金币的技巧</h2>
+                <p class="text-gray-700 mb-4">金币是Pou世界的货币，你需要它们来购买食物、药水和装饰品。以下是在在线Pou游戏中赚取金币的一些最佳方法：</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><strong>玩小游戏：</strong> 小游戏是赚取金币最快的方式。热门游戏包括Pou足球挑战和飞行游戏，你需要引导你的Pou穿过障碍物。</li>
+                    <li><strong>每日奖励：</strong> 记得每天登录以收集免费奖励和金币，这些可以帮助你保持宠物的快乐和饱足。</li>
+                    <li><strong>完成成就：</strong> 游戏为照顾你的Pou提供了各种成就。完成这些任务将奖励你额外的金币。</li>
+                </ul>
+                <img src="/5.jpg" alt="Pou金币" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-blue-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">为什么要在线玩Pou？</h2>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">可访问性</h3>
+                <p class="text-gray-700 mb-4">在线玩这个游戏无需下载或更新。你只需打开浏览器就可以立即开始游戏。这使得新玩家更容易尝试游戏，无需承诺下载应用。</p>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">经典游戏，新功能</h3>
+                <p class="text-gray-700 mb-4">Pou的浏览器版本保留了原始手机游戏的所有乐趣，但具有更强的可访问性。游戏玩法直观，使新玩家和回归玩家都能享受其中。无论你是想通过照顾你的Pou来放松，还是想接受小游戏的挑战，Pou的在线版本都能满足你的需求。</p>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">免费游玩</h3>
+                <p class="text-gray-700">这款在线游戏最好的特点之一是完全免费游玩。你可以无需任何费用就体验养育Pou的乐趣，这使它成为那些寻找有趣且经济实惠的游戏的人的理想选择。</p>
+            </div>
+    
+            <div class="bg-red-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-red-600 mb-4">结论</h2>
+                <p class="text-gray-700">总之，这款游戏仍然是一款备受喜爱的虚拟宠物游戏，现在它可以在线供所有人享受。无论你是Pou世界的新手还是长期粉丝，这个在线版本都将Pou的魅力和刺激带到了你的网页浏览器中。照顾你的Pou，玩小游戏，探索众多个性化选项，创造你完美的宠物。今天就开始在线玩Pou，发现为什么全世界数百万玩家都喜爱这款可爱而有趣的游戏！</p>
+                <img src="/6.jpg" alt="Pou游戏总结" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-4 sm:mt-8 py-3 sm:py-4">
+        <div class="container mx-auto px-4 text-center text-sm sm:text-base text-gray-600">
+            &copy; 2023 在线Pou。保留所有权利。
+        </div>
+    </footer>
+</body>
+<script src="/script.js"></script>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブラウザでプーをオンラインプレイ - 無料の仮想ペットゲーム    </title>
+    <meta name="description" content="プーをオンラインでプレイ、楽しくて無料の仮想ペットゲーム！エイリアンペットに餌をやり、掃除し、ミニゲームで遊んで世話をしよう。ダウンロード不要 – ウェブブラウザで本来のプー体験を楽しもう。">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .iframe-container {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .game-frame {
+            border: 10px solid transparent;
+            border-image: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2) 1;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.1));
+        }
+    </style>
+            <link rel="alternate" hreflang="en" href="https://pou.lol/" />
+            <link rel="alternate" hreflang="es" href="https://pou.lol/es/" />
+            <link rel="alternate" hreflang="de" href="https://pou.lol/de/" />
+            <link rel="alternate" hreflang="zh-cn" href="https://pou.lol/zh-cn/" />
+            <link rel="alternate" hreflang="fr" href="https://pou.lol/fr/" />
+            <link rel="alternate" hreflang="it" href="https://pou.lol/it/" />
+            <link rel="alternate" hreflang="ja" href="https://pou.lol/ja/" />
+            <link rel="alternate" hreflang="pt-br" href="https://pou.lol/pt-br/" />
+            <link rel="alternate" hreflang="hi" href="https://pou.lol/hi/" />
+            <script type="application/ld+json">
+                {
+                  "@context": "http://schema.org",
+                  "@type": "WebSite",
+                  "name": "Pou Online",
+                  "url": "https://pou.lol/ja/",
+                  "inLanguage": "ja"
+                }
+                </script>
+</head>
+<body class="bg-blue-50">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                <img src="/logo.jpg" alt="プーのロゴ" class="w-10 h-10 sm:w-12 sm:h-12">
+                <h1 class="text-2xl sm:text-3xl font-bold text-blue-500">プーオンライン</h1>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                <div class="flex space-x-4 mb-2 sm:mb-0">
+                    <a href="index.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">ホーム</a>
+                    <a href="/blogs" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">ブログ</a>
+                    <a href="/terms-of-service.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">利用規約</a>
+                    <a href="/privacy-policy.html" class="text-sm sm:text-base text-gray-600 hover:text-blue-500">プライバシー</a>
+                </div>
+                <select class="bg-white border border-gray-300 rounded px-2 py-1 text-sm sm:text-base">
+                    <option value="en">英語</option>
+                    <option value="es">スペイン語</option>
+                    <option value="pt-br">ポルトガル語（ブラジル）</option>
+                    <option value="fr">フランス語</option>
+                    <option value="it">イタリア語</option>
+                    <option value="hi">ヒンディー語</option>
+                    <option value="zh-cn">簡体字中国語</option>
+                    <option value="ja" selected>日本語</option>
+                    <option value="de">ドイツ語</option>
+                </select>
+                <nav style="display: none;">
+                    <a href="/" hreflang="en">英語</a>
+                    <a href="/es/" hreflang="es">スペイン語</a>
+                    <a href="/pt-br/" hreflang="pt-br">ポルトガル語（ブラジル）</a>
+                    <a href="/fr/" hreflang="fr">フランス語</a>
+                    <a href="/it/" hreflang="it">イタリア語</a>
+                    <a href="/hi/" hreflang="hi">ヒンディー語</a>
+                    <a href="/zh-cn/" hreflang="zh-cn">簡体字中国語</a>
+                    <a href="/ja/" hreflang="ja">日本語</a>
+                    <a href="/de/" hreflang="de">ドイツ語</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-4 sm:py-8">
+        <div class="iframe-container p-2 sm:p-4 shadow-lg">
+            <iframe src="https://html5.gamedistribution.com/d1362abc246f43bdb5c26643aec2b61b/" class="game-frame w-full h-[60vh] sm:h-[80vh] rounded-lg"></iframe>
+        </div>
+        <div class="mt-4 flex justify-between items-center bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200 p-3 rounded-lg shadow-md">
+            <button onclick="resetGame()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                ゲームをリセット
+            </button>
+            <button onclick="toggleFullscreen()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                全画面表示
+            </button>
+        </div>
+        <div class="mt-8 space-y-8">
+            <div class="bg-white rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-blue-500 mb-4">プーをオンラインでプレイ - ブラウザで楽しむ無料の仮想ペットゲーム</h2>
+                <p class="text-gray-700">仮想ペットゲームが好きな方には、プーがぴったりのオンラインゲームです。このブラウザ版では、アプリをダウンロードすることなく、プーの世話を楽しむことができます。このオンラインプーゲームでは、かわいいエイリアンペットに餌をやり、洗い、ミニゲームで遊ぶことができ、すべてウェブブラウザから快適に楽しめます。プーについて知っておくべきことすべて、その歴史、ゲームプレイの戦略、そしてプーを幸せで健康に保つためのヒントを見ていきましょう。</p>
+                <img src="/1.jpg" alt="プーオンラインゲーム" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-yellow-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-yellow-600 mb-4">プーとは？</h2>
+                <p class="text-gray-700">これは、プレイヤーがかわいい、しずく型のエイリアン生物の世話をする独特な仮想ペットゲームです。もともとモバイルゲームとしてリリースされたプーは、シンプルながら魅力的なゲームプレイにより、世界中のプレイヤーに愛されるようになりました。このゲームでは、プレイヤーはプーに餌をやり、清潔に保ち、着せ替えをし、ミニゲームで遊ぶことでプーと交流できます。プーの世話をすればするほど、より多くのカスタマイズオプションと機能がアンロックされます。</p>
+                <img src="/2.webp" alt="プーキャラクター" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-green-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-green-600 mb-4">プーの歴史</h2>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">プーの起源</h3>
+                <p class="text-gray-700 mb-4">このゲームは2012年に、クラシックなたまごっちに似たゲームを作ることを目指したレバノン人開発者のポール・サラメによって初めてリリースされました。アクセスしやすい性質と仮想ペットの世話をする魅力により、ゲームはすぐに人気を博しました。長年にわたり、プーはモバイルゲーマーの間で有名になり、シンプルなゲームプレイメカニクスで何時間もの楽しみを提供しています。</p>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">プーの人気の上昇</h3>
+                <p class="text-gray-700 mb-4">リリース以来、このゲームはAndroidとiOSデバイスで何百万回もダウンロードされています。ゲームの中毒性のある魅力は、プーに餌をやる、楽しませるためにゲームをプレイする、外見をカスタマイズするなど、幅広い活動にあります。プーのブラウザ版は、同じ魅力的な体験を全く新しい観客にもたらし、インストールの必要なしにさらに多くのプレイヤーがこの楽しいゲームを楽しめるようにしています。</p>
+                <h3 class="text-2xl font-bold text-green-500 mb-2">プーの進化</h3>
+                <p class="text-gray-700">時間とともに、このゲームは基本的な仮想ペットゲームから、ミニゲームとカスタマイズオプションに満ちた豊かで多様な体験へと進化しました。オンライン版の導入により、プレイヤーはウェブブラウザを通じて簡単にゲームにアクセスでき、いつでもどこでもプーの世話ができるようになりました。プーが進化し続けるにつれ、熱心なファンのコミュニティも成長し続け、最も長続きする仮想ペットゲームの1つとなっています。</p>
+                <img src="/3.jpg" alt="プーの歴史タイムライン" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-pink-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-pink-600 mb-4">プーの遊び方</h2>
+                <h3 class="text-2xl font-bold text-pink-500 mb-2">始め方</h3>
+                <p class="text-gray-700 mb-4">このゲームをプレイするには、ウェブブラウザでゲームを開くだけです。ゲームがロードされると、あなた自身のプーが紹介されます。あなたの目標は、餌をやり、清潔に保ち、十分な休息を取らせるなど、このエイリアンペットのニーズを満たすことでケアすることです。</p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>プーに餌をやる：</strong> さまざまな種類の食べ物を与えて、ペットを満腹で幸せに保ちましょう。ミニゲームをプレイして獲得したコインを使って、ゲーム内ショップから食べ物を購入できます。</li>
+                    <li><strong>プーを清潔に保つ：</strong> 時間が経つとペットは汚れるので、清潔に保つのはあなたの仕事です。石鹸と水を使ってプーを洗い、新鮮で健康的な状態を保ちましょう。</li>
+                    <li><strong>プーと遊ぶ：</strong> あなたのペットは遊ぶのが大好きです！プーを楽しませるだけでなく、食べ物やアクセサリーを買うためのコインを稼ぐのにも役立つさまざまなミニゲームに参加しましょう。</li>
+                </ul>
+                <h3 class="text-2xl font-bold text-pink-500 mb-2">プーのケアの高度な戦略</h3>
+                <p class="text-gray-700">基本をマスターしたら、プーを繁栄させるためのいくつかの高度なヒントがあります：</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><strong>エネルギー管理：</strong> ペットは遊んだ後に疲れます。エネルギーを回復するためにプーを寝かせましょう。あまり疲れさせすぎないようにしてください。気分に影響します。</li>
+                    <li><strong>ミニゲーム：</strong> プーのミニゲームは単なる楽しみだけではありません。追加のコインを稼ぐ素晴らしい方法です。より多くのコインを集めれば、衣装、食べ物、部屋の装飾など、プーのためにより多くのものを購入できます。</li>
+                    <li><strong>カスタマイズ：</strong> 進行するにつれて、幅広いカスタマイズオプションをアンロックできます。プーの外見、衣装、さらには家の壁紙も変更できます。これらの機能により、プーはよりパーソナルで楽しいものになります。</li>
+                </ul>
+                <img src="/4.webp" alt="プーのゲームプレイ" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-purple-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-purple-600 mb-4">プーでコインを稼ぐためのヒント</h2>
+                <p class="text-gray-700 mb-4">コインはプーの世界の通貨であり、食べ物、ポーション、装飾品を購入するために必要です。オンラインプーゲームでコインを稼ぐ最良の方法をいくつか紹介します：</p>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><strong>ミニゲームをプレイする：</strong> ミニゲームはコインを稼ぐ最速の方法です。人気のゲームには、プーサッカーチャレンジや、障害物を通してプーを導く飛行ゲームなどがあります。</li>
+                    <li><strong>デイリーリワード：</strong> 毎日ログインして、無料の報酬とコインを集めることを忘れずに。これらはペットを幸せで十分に食べさせるのに役立ちます。</li>
+                    <li><strong>実績を完了する：</strong> ゲームはプーの世話に関するさまざまな実績を提供しています。これらのタスクを完了すると、追加のコインで報酬が得られます。</li>
+                </ul>
+                <img src="/5.jpg" alt="プーのコイン" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+    
+            <div class="bg-blue-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4">なぜプーをオンラインでプレイするのか？</h2>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">アクセシビリティ</h3>
+                <p class="text-gray-700 mb-4">このゲームをオンラインでプレイすることで、ダウンロードやアップデートの必要がなくなります。ブラウザを開いてすぐにプレイを始めることができます。これにより、新しいプレイヤーがアプリにコミットすることなくゲームを試すことが容易になります。</p>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">新機能を備えたクラシックゲーム</h3>
+                <p class="text-gray-700 mb-4">プーのブラウザ版は、オリジナルのモバイルゲームの楽しさをすべて保持しつつ、アクセシビリティが向上しています。ゲームプレイは分かりやすく、新規プレイヤーにも復帰プレイヤーにも楽しめるものとなっています。プーの世話をしてリラックスしたい場合も、ミニゲームのチャレンジに挑戦したい場合も、プーのオンライン版にはすべてが揃っています。</p>
+                <h3 class="text-2xl font-bold text-blue-500 mb-2">無料でプレイ</h3>
+                <p class="text-gray-700">このオンラインゲームの最高の特徴の1つは、完全に無料でプレイできることです。コストをかけずにプーを育てる喜びを体験できるため、楽しくて予算に優しいゲームを探している人にとって理想的な選択肢です。</p>
+            </div>
+    
+            <div class="bg-red-100 rounded-3xl p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-3xl font-bold text-red-600 mb-4">結論</h2>
+                <p class="text-gray-700">結論として、このゲームは愛される仮想ペットゲームであり続け、今や誰もがオンラインで楽しめるようになりました。プーの世界に初めて触れる方も、長年のファンの方も、このオンライン版はプーの魅力と興奮をウェブブラウザにもたらします。プーの世話をし、ミニゲームをプレイし、多くのカスタマイズオプションを探索しながら、あなただけの完璧なペットを作り上げましょう。今すぐプーをオンラインでプレイし始めて、世界中の何百万人ものプレイヤーがこのかわいくて楽しいゲームを愛する理由を発見してください！</p>
+                <img src="/6.jpg" alt="プーゲームサマリー" class="w-1/2 mx-auto mt-4 rounded-lg">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-4 sm:mt-8 py-3 sm:py-4">
+        <div class="container mx-auto px-4 text-center text-sm sm:text-base text-gray-600">
+            &copy; 2023 プーオンライン。全ての権利を保有します。
+        </div>
+    </footer>
+</body>
+<script src="/script.js"></script>
+</html>
